@@ -21,19 +21,18 @@
 
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+      <a class="navbar-brand" href="#">COLMIMSS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
             </li>
             <li class="nav-item">
               <form class="row g-3">
@@ -56,53 +55,48 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav><br><br> <br>
   
-    
   
-    <div class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">COLMIMSS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
+  
+  <div class="accordion container" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Registro de Usuarios
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-
-          <a href="#home">Inicio</a>
-          <a href="#about">Acerca de</a>
-          <a href="#contact">Contactanos</a>
-  
-          <div>
-            <form id="login-form">
-              <label for="email-login">Email:</label>
-              <input type="email" id="email-login" required>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body mb-3">
+          <div class="mb-3 row">
+            <label for="stacitNombre" class="col-sm col-form-label">Nombre</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control" id="nombre" required>
               <br>
-              <label for="contrasena-login">Contraseña:</label>
-              <input type="password" id="contrasena-login" required>
-              <br>
-              <button type="submit">Iniciar sesión</button>
-            </form>
+            </div>
           </div>
 
-        </div>
-          
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm col-form-label">Correo</label>
+            <div class="col-sm-10">
+              <input type="email" readonly class="form-control" id="email" required>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="staticContrasena" class="col-sm col-form-label">Contraseña</label>
+            <div class="col-sm-9">
+              <input type="password" readonly class="form-control" id="contrasena" required>
+            </div>
+          </div>
+            <br>
+            <button type="submit">Registrar</button> 
         </div>
       </div>
+    </div>
+  </div>
   
-  
-    <h2>Registro de usuario</h2>
-  <form id="registro-form">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-    <br>
-    <label for="contrasena">Contraseña:</label>
-    <input type="password" id="contrasena" required>
-    <br>
-    <button type="submit">Registrarse</button>
-  </form>
+
   
     
       <title>Registro de nombres</title>
@@ -128,7 +122,7 @@
       
   
       
-    
+  
       
       <script src="RegNom.js"></script>
       <script src="registro.js"></script>
