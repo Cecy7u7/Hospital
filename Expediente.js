@@ -1,4 +1,4 @@
-class Expediente extends Persona{
+class Expediente extends Doctor{
     Enfermedad;
     Alergia;
 
