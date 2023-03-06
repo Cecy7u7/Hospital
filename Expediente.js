@@ -9,6 +9,6 @@ class Expediente extends Doctor{
 
 }
 
-deirenfermedad = function(){
-    return `La enfermedda es${this.consult}`;
+decirenfermedad = function(){
+    return `La enfermedda es${this.padecimiento}`;
 }
