@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>F</title>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
   integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
@@ -12,77 +12,104 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
   integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-  <title>Document</title>
 </head>
 <body>
   
 
-    
-  
-    <div class="topnav navbar-expand-lg navbar-dark bg-light">COLMIMSS
-      <a class="active" href="#home">Inicio</a>
-      <a href="#about">Acerca de</a>
-      <a href="#contact">Contactanos</a>
-  
-      <div>
-        <form id="login-form">
-          <label for="email-login">Email:</label>
-          <input type="email" id="email-login" required>
-          <br>
-          <label for="contrasena-login">Contraseña:</label>
-          <input type="password" id="contrasena-login" required>
-          <br>
-          <button type="submit">Iniciar sesión</button>
-        </form>
-      </div>
-    </div>
   
     <div class="container text-center">
-      <h2>Registro de usuario</h2>
-      <form id="registro-form">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
-      <br>
-      <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" required>
-      <br>
-      <button type="submit">Registrarse</button>
+      <div class="row">
+
+        <div class="col">
+          <h2>RECEPCIONISTA</h2>
+          <!-- HTML para el formulario -->
+            <form id="formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" required><br>
+
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" required><br>
+
+              <label for="id">ID:</label>
+              <input type="text" id="id" required><br>
+
+              <button type="submit">Enviar</button>
+            </form>
+
+    <!-- HTML para la lista de personas -->
+      <ul id="lista-personas"></ul>
+        </div>
+
+        <div class="col">
+          <h2>HABITACION</h2>
+            <form id="room-form">
+              <label for="room-number">Número de Habitación:</label>
+              <input type="text" id="room-number" name="room-number"><br><br>
+  
+              <label for="room-type">Tipo de Habitación:</label>
+              <select id="room-type" name="room-type">
+              <option value="simple">Simple</option>
+              <option value="doble">Doble</option>
+              <option value="triple">Triple</option>
+              </select><br><br>
+  
+              <input type="submit" value="Guardar">
+            </form>
+
+            <ul id="room-list">
+            <!-- Aquí se mostrarán las habitaciones guardadas -->
+            </ul>
+        </div>
+
+        <div class="col">
+          <h2>RESERVACION</h2>
+            <form id="reservation-form">
+              <label for="client-number">Número de Cliente:</label>
+              <input type="text" id="client-number" name="client-number"><br><br>
+            
+              <label for="room-number">Número de Habitación:</label>
+              <input type="text" id="room-number" name="room-number"><br><br>
+            
+              <input type="submit" value="Guardar">
+            </form>
+          
+            <ul id="reservation-list">
+            <!-- Aquí se mostrarán las reservas guardadas -->
+            </ul>
+        </div>
+
+        <div class="col">
+          <h2>CLIENTE</h2>
+            <form id="client-form">
+              <label for="first-name">Nombre:</label>
+              <input type="text" id="first-name" name="first-name"><br><br>
+            
+              <label for="last-name">Apellido:</label>
+              <input type="text" id="last-name" name="last-name"><br><br>
+            
+              <input type="submit" value="Guardar">
+            </form>
+          
+            <ul id="client-list">
+            <!-- Aquí se mostrarán los clientes guardados -->
+            </ul>
+        </div>
+
       </div>
-  
-    
-      
-    
-      <h2>Registro de Pacientes</h2>
-      <form id="registro">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="apellidoP">Apellido paterno:</label>
-        <input type="text" id="apellidoP" name="apellidoP" required>
-        <br>
-        <label for="apellidoM">Apellido materno:</label>
-        <input type="text" id="apellidoM" name="apellidoM" required>
-        <br>
-        <button type="submit">Registrarse</button>
-      </form>
-      
-      <ul id="nombres"></ul>
-  
-      <button id="borrar-localstorage">Borrar LocalStorage</button>
-  
+    </div>
+
+
+    <div>
       
   
-      
-    
-      
-      <script src="RegNom.js"></script>
-      <script src="registro.js"></script>
-      <script src="borrarLS.js"></script>
-    
+      <button id="clear-storage">Borrar datos</button>
+    </div>
+
 
 
 </body>
+
+<script src="registro.js"></script>
+<script src="borrarLS.js"></script>
+
 </html>
